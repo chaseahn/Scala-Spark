@@ -1,0 +1,23 @@
+Spark
+
+- Open source on Apache
+- Flexible alternative to MapReduce
+
+Spark vs. MapReduce
+
+- MapReduce write most data to disk after each map reduce operation
+- Spark keeps most of the data in memory after transformation
+- Spark can spill over to disk if the memory is filled
+
+Spark RDDs
+
+- At the core Spark is the idea of a Resilient Districuted Dataset (SDD)
+- RDD had 4 main features
+    * Distributed collection of Data
+    * Fault-tolerant
+    * Parallel operation - partioned
+    * Ability to use many data sources
+- Two types of RDD operations: Transformations, Actions
+    * tranformations - recipes to follow
+    * actions - perform what the recipe says to do and returns something back
+
